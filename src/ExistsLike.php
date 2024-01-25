@@ -24,7 +24,7 @@ class ExistsLike implements Rule
 
     public function message()
     {
-        return __('O campo :attribute não pode ser atualizado');
+        return __('O campo :attribute não é válido');
     }
 
     public function validate(string $attribute, $value, $params, Validator $validator)
