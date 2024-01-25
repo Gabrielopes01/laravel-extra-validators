@@ -10,8 +10,6 @@ use Illuminate\Validation\Validator;
 
 class ExistsLike implements Rule
 {
-    protected $method;
-
     public static function handle(): string
     {
         return 'exists_like';
@@ -24,13 +22,13 @@ class ExistsLike implements Rule
 
     public function message()
     {
-        return __('O campo :attribute não é válido');
+        return __('O valor não é válido');
     }
 
     public function validate(string $attribute, $value, $params, Validator $validator)
     {
         $handle = $this->handle();
-
+        
         if(!$params || count($params) < 2) {
             throw new Exception('A regra "exists_like" espera pelo menos 2 parâmetros');
         }
