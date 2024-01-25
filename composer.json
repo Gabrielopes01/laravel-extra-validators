@@ -1,0 +1,23 @@
+{
+    "name": "gabrielopes01/laravel-extra-validators",
+    "description": "A package with extra validation to Laravel requests",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gabrielopes01\\LaravelExtraValidators\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gabriel Lopes",
+            "email": "gabrielperinotto95@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^1.23"
+    },
+    "require": {
+        "laravel/framework": "^9.52"
+    }
+}
